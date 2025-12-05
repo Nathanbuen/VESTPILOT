@@ -2,60 +2,111 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Início - InstaClone</title>
+<title>Feed</title>
 <style>
 
-    
-    body { font-family: Arial;
-         background:#fafafa;
-          margin:0; 
-        }
-    .navbar{ 
-         background:rgb(249, 35, 124);
-         padding:15px; display:flex;
-         justify-content:space-between; 
-        }
-    .navbar h3{
-        color: aliceblue;
+    body {
+        margin:0; 
+        font-family:Arial;
+        background: linear-gradient(13deg, #d8e6ff, #f5f1e6);
     }
-    .navbar a{
-        color: aliceblue;
+
+
+    .topbar {
+        width:100%;
+        background:#6d87ff; 
+        padding:15px 0;
+        text-align:center;
+        position:fixed;
+        top:0;
+        left:0;
+        color:white;
+        font-size:22px;
+        font-weight:bold;
+        box-shadow:0 2px 6px rgba(0,0,0,0.2);
     }
-    .post { 
-        background:white; 
-        width:400px; 
-        margin:20px auto; 
-        border:1px solid #ddd;
-        border-radius:5px; 
-        }
-    .post img { 
-        width:100%; 
+
+
+    .post {
+        background:white;
+        max-width:500px;
+        margin:100px auto 20px auto; 
+        border-radius:12px;
+        box-shadow:0 2px 6px rgba(0,0,0,0.1);
+        overflow:hidden;
     }
-    .post .desc { 
+
+    .post img {
+        width:100%;
+        height:350px;
+        object-fit:cover;
+    }
+
+    .post h3 {
         padding:10px;
-     }
+    }
+
+ 
+    .navbar {
+        position:fixed; 
+        bottom:0; 
+        left:0;
+        width:100%; 
+        background:white;
+        border-top:1px solid #ccc;
+        padding:12px 0;
+        display:flex; 
+        justify-content:space-around;
+    }
+
+    .navbar a { 
+        text-decoration:none; 
+        color:#6d87ff; 
+        font-weight:bold; 
+    }
+
+    .btn-voltar {
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform: translateY(-50%);
+    background:white;
+    color:#6d87ff;
+    padding:6px 12px;
+    border-radius:8px;
+    font-weight:bold;
+    text-decoration:none;
+    border:1px solid #cfd7ff;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+}
+
+
 </style>
 </head>
 <body>
 
+
+<div class="topbar">
+    <a href="login.html" class="btn-voltar">sair</a>
+    VestPilot
+</div>
+
+
+<div class="post">
+    <img src="/IMG/avatar-gen1b24a24bf0fefe91fa68b0bc78464485.jpg">
+    <h3>@papacapim — Minha primeira postagem no vestpilot!</h3>
+</div>
+
+<div class="post">
+    <img src="/IMG/avatar-gendfa044b82db5de63af76c9df536d23f6.jpg">
+    <h3>@timidoxsd — Oi galera do vestpilot</h3>
+</div>
+
+
 <div class="navbar">
-    <h3>VESTPILOT</h3>
-    <div>
-        <a href="inicio.html">Início</a> |
-        <a href="post.html">Postar</a> |
-        <a href="perfil.html">Perfil</a> |
-        <a href="suporte.html">Ajuda</a>
-    </div>
-</div>
-
-<div class="post">
-    <img src="/IMG/avatar-genf88237332027dd43c2f57d2084532ea9.jpg" alt="Postagem">
-    <div class="desc"><strong>@usuario</strong> Foto teste</div>
-</div>
-
-<div class="post">
-    <img src="/IMG/avatar-gena49c78abd32b3f45eb1dcc5536b30a12.jpg" alt="Postagem">
-    <div class="desc"><strong>@usuario</strong> Foto teste</div>
+    <a href="post.html">Postar</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="suporte.html">Suporte</a>
 </div>
 
 </body>

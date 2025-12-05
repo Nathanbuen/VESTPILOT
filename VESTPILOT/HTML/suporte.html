@@ -2,23 +2,104 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Suporte - InstaClone</title>
+<title>Suporte</title>
 <style>
-    body { font-family: Arial; background:#fafafa; padding:40px; }
-    .box { background:white; padding:30px; border:1px solid #ddd; width:400px; margin:auto; }
-    textarea { width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:4px; }
-    button { width:100%; padding:10px; background:#3897f0; color:white; border:none; border-radius:4px; cursor:pointer; }
+    body {
+        margin:0;
+        font-family:Arial, sans-serif;
+        background: linear-gradient(135deg, #d8e6ff, #f5f1e6);
+        display:flex;
+        justify-content:center;
+        align-items:flex-start;
+        padding-top:50px;
+        height:100vh;
+    }
+
+    .card {
+        background:white;
+        width:350px;
+        padding:25px;
+        border-radius:15px;
+        box-shadow:0 4px 15px rgba(0,0,0,0.1);
+        text-align:center;
+    }
+
+    h2 {
+        margin-bottom:10px;
+        color:#6d87ff;
+    }
+
+    p {
+        font-size:14px;
+        color:#444;
+        margin-bottom:15px;
+    }
+
+    input, textarea {
+        width:100%;
+        padding:12px;
+        margin:10px 0;
+        border-radius:10px;
+        border:1px solid #bbb;
+        font-size:14px;
+    }
+
+    textarea {
+        height:120px;
+        resize:none;
+    }
+
+    button {
+        width:100%;
+        padding:12px;
+        border:none;
+        border-radius:10px;
+        background:#6d87ff;
+        color:white;
+        font-size:16px;
+        cursor:pointer;
+        margin-top:5px;
+    }
+
+    button:hover {
+        opacity:0.9;
+    }
+
+    .navbar {
+        position:fixed;
+        bottom:0;
+        width:100%;
+        background:white;
+        border-top:1px solid #ccc;
+        padding:12px 0;
+        display:flex;
+        justify-content:space-around;
+    }
+
+    .navbar a {
+        text-decoration:none;
+        color:#6d87ff;
+        font-weight:bold;
+    }
 </style>
 </head>
 <body>
 
-<div class="box">
-    <h2>Suporte e Ajuda</h2>
-    <p>estamos aqui pra ajudar
-    -
-    Descreva seu problema:</p>
-    <textarea rows="5"></textarea>
-    <button>Enviar</button>
+<div class="card">
+    <h2>Suporte</h2>
+    <p>Precisa de ajuda? Envie sua mensagem e retornaremos o mais rápido possível.</p>
+
+    <input type="text" placeholder="Seu nome">
+    <input type="email" placeholder="Seu email">
+    <textarea placeholder="Descreva seu problema..."></textarea>
+
+    <button onclick="alert('Mensagem enviada!')">Enviar</button>
+</div>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="post.html">Postar</a>
+    <a href="perfil.html">Perfil</a>
 </div>
 
 </body>

@@ -2,53 +2,96 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Perfil - InstaClone</title>
+<title>Perfil</title>
 <style>
-    body { 
-        font-family: Arial; 
-        background:#fafafa;
+    body {
         margin:0; 
-        text-align:center;
-         }
-    .header { 
-        background:white; 
-        padding:20px; border-bottom:1px solid #ddd; 
-         }
-    .avatar { 
-        border-radius:50%; 
-        width:120px; }
-   
-    .grid {
-        width: 100%;
-        max-width: 900px; /* trava a largura total */
-        margin: auto;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
-        gap: 5px;
-        padding: 20px;
+        font-family:Arial;
+        background:#f5f1e6;
+        display:flex; 
+        flex-direction:column; 
+        align-items:center;
     }
 
-    .grid img {
-        width: 100%;
-        height: 300px; /* ALTURA TRAVADA */
-        object-fit: cover; /* corta para manter o formato */
-        display: block;}
+    .header {
+  
+     
+        padding:11px; 
+        border-bottom:1px solid #ccc;
+        display:flex;
+        align-items:center; 
+        gap: 40px;
+    }
+
+    .avatar {
+        width:130px; 
+        height:130px;
+        border-radius:50%; 
+        object-fit:cover;
+        border:3px solid #d8e6ff;
+    }
+
+    .stats { display:flex;
+         gap:25px; margin-top:10px;
+     }
+
+    .grid {
+        width:100%; 
+        max-width:900px;
+        display:grid; 
+        grid-template-columns:repeat(3,1fr);
+        gap:5px; 
+        margin-top:20px;
+    }
+    .grid img { 
+        width:100%; 
+        height:300px; 
+        object-fit:cover; 
+        border-radius:8px; 
+    }
+
+    .navbar {
+        position:fixed; 
+        bottom:0; width:100%;
+        background:white;
+        border-top:1px solid #ccc;
+        padding:12px 0; 
+        display:flex; 
+        justify-content:space-around;
+    }
+    .navbar a {
+       text-decoration:none;
+       color:#6d87ff;
+       font-weight:bold; }
 </style>
+
 </head>
 <body>
-
 <div class="header">
-    <img class="avatar" src="/IMG/avatar-gena49c78abd32b3f45eb1dcc5536b30a12.jpg" alt="Avatar">
-    <h3>@usuario</h3>
+    <img class="avatar" src="/IMG/avatar-gena49c78abd32b3f45eb1dcc5536b30a12.jpg">
+    <div>
+        <h3>@papacapim</h3>
+        <div class="stats">
+            <div>12 posts</div>
+            <div>842 seguidores</div>
+            <div>301 seguindo</div>
+        </div>
+    </div>
 </div>
 
 <div class="grid">
     <img src="/IMG/avatar-gendfa044b82db5de63af76c9df536d23f6.jpg">
-    <img src="/IMG/avatar-gendfa044b82db5de63af76c9df536d23f6.jpg">
     <img src="/IMG/avatar-gen1b24a24bf0fefe91fa68b0bc78464485.jpg">
-    <img src="/IMG/avatar-gendfa044b82db5de63af76c9df536d23f6.jpg">
     <img src="/IMG/avatar-genf88237332027dd43c2f57d2084532ea9.jpg">
     <img src="/IMG/avatar-gena49c78abd32b3f45eb1dcc5536b30a12.jpg">
+    <img src="/IMG/avatar-gendfa044b82db5de63af76c9df536d23f6.jpg">
+    <img src="/IMG/avatar-gen1b24a24bf0fefe91fa68b0bc78464485.jpg">
+</div>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="post.html">Postar</a>
+    <a href="suporte.html">suporte</a>
 </div>
 
 </body>

@@ -2,40 +2,68 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Postar - InstaClone</title>
+<title>Postar</title>
 <style>
-    body { font-family: Arial;
-         background:#fafafa;
-          display:flex; 
-          justify-content:center; 
-          align-items:center; 
-          height:100vh; }
-    .box { background:white;
-         padding:30px; 
-         border:1px solid #ddd;
-          width:320px; }
-    input, textarea { width:100%;
-         margin:10px 0; 
-         padding:10px;
-          border:1px solid #ccc; 
-          border-radius:4px; }
-    button { width:100%; 
-    padding:10px;
-     background:#3897f0;
-      color:white; 
-      border:none;
-       border-radius:4px; 
-       cursor:pointer; }
+    body {
+        margin:0; font-family:Arial;
+        background: linear-gradient(135deg, #d8e6ff, #f5f1e6);
+        display:flex; justify-content:center; align-items:center;
+        height:100vh;
+    }
+    .card {
+        background:white; width:350px;
+        padding:25px; border-radius:15px;
+        text-align:center;
+        box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    }
+    textarea {
+        width:100%; height:100px;
+        padding:10px; border-radius:10px;
+        border:1px solid #aaa; resize:none;
+    }
+    input { margin:10px 0;
+    }
+
+    button {
+        width:100%; padding:12px;
+        background:#6d87ff; color:white;
+        border:none; border-radius:10px;
+        cursor:pointer;
+    }
+    
+    .navbar {
+        position:fixed; 
+        bottom:0; 
+        left:0;
+        width:100%; 
+        background:white;
+        border-top:1px solid #ccc;
+        padding:12px 0;
+        display:flex; 
+        justify-content:space-around;
+    }
+
+    .navbar a { 
+        text-decoration:none; 
+        color:#6d87ff; 
+        font-weight:bold; 
+    }
+
 </style>
 </head>
 <body>
-
-<div class="box">
-    <h3>Nova Postagem</h3>
+<div class="card">
+    <h2>Nova Postagem</h2>
     <input type="file">
-    <textarea rows="4" placeholder="Escreva uma legenda..."></textarea>
-    <button onclick="window.location.href='/HTML/index.html'">Publicar</button>
-</div>
+    <textarea placeholder="Escreva uma legenda..."></textarea>
+    <button onclick="window.location.href='/HTML/index.html'">Postar</button>
 
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="suporte.html">Suporte</a>
+    </div>
+    
+</div>
 </body>
 </html>
